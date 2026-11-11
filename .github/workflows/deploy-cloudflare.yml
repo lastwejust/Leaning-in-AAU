@@ -7,6 +7,15 @@ on:
       - "docs/**"
       - "mkdocs.yml"
       - "requirements.txt"
+      - "scripts/**"
+      - "00-**"
+      - "01-**"
+      - "02-**"
+      - "03-**"
+      - "04**"
+      - "05-**"
+      - "06-**"
+      - "07-**"
       - ".github/workflows/deploy-cloudflare.yml"
   workflow_dispatch:
 
@@ -32,12 +41,6 @@ jobs:
       - name: Checkout
         if: steps.check.outputs.skip != 'true'
         uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            docs
-            mkdocs.yml
-            requirements.txt
-          sparse-checkout-cone-mode: false
 
       - name: Setup Python
         if: steps.check.outputs.skip != 'true'
@@ -45,11 +48,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Build site
+      - name: Build site (docs + materials)
         if: steps.check.outputs.skip != 'true'
         run: |
           pip install -r requirements.txt
-          mkdocs build
+          python scripts/build_site.py
 
       - name: Create Pages project if missing
         if: steps.check.outputs.skip != 'true'

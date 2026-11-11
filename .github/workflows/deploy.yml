@@ -7,6 +7,15 @@ on:
       - "docs/**"
       - "mkdocs.yml"
       - "requirements.txt"
+      - "scripts/**"
+      - "00-**"
+      - "01-**"
+      - "02-**"
+      - "03-**"
+      - "04**"
+      - "05-**"
+      - "06-**"
+      - "07-**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
@@ -35,8 +44,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build site
-        run: mkdocs build
+      - name: Build site (docs + materials)
+        run: python scripts/build_site.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
