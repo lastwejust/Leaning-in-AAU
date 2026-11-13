@@ -6,8 +6,8 @@
 > 仓库永久免费；如果有人拿这里的资料收费、倒卖，请直接拒绝。
 
 
-> 🌐 网页版（不用登录，可直接浏览下载) :https://ahau-course.pages.dev/
-> 备用：https://lastwejust.github.io/Leaning-in-AAU/
+> 🌐 网页版（不用登录，可直接浏览下载）：https://ahau-course.pages.dev/
+> 备用：https://lastwejust.github.io/Learning-in-AAU/
 
 
 ## 10 秒上手
