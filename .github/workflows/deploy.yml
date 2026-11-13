@@ -3,20 +3,6 @@ name: Deploy site to GitHub Pages
 on:
   push:
     branches: [main]
-    paths:
-      - "docs/**"
-      - "mkdocs.yml"
-      - "requirements.txt"
-      - "scripts/**"
-      - "00-**"
-      - "01-**"
-      - "02-**"
-      - "03-**"
-      - "04**"
-      - "05-**"
-      - "06-**"
-      - "07-**"
-      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 
 permissions:
@@ -51,6 +37,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
+          # 用 run_attempt 区分：重跑时不会和上一次的产物重名
+          name: github-pages-${{ github.run_attempt }}
 
   deploy:
     needs: build
@@ -62,3 +50,5 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
