@@ -1,0 +1,622 @@
+/* ─────────────────────────────────────────────
+   安农课程资料库 · 配色
+   Security Blue #356EAC · Ice Blue #BAD8E6
+   Mint Paper #CFDCCB · Copper Glow #BA8048
+   Ivory Note #F1ECDC
+   ───────────────────────────────────────────── */
+
+[data-md-color-scheme="aau"] {
+  --md-primary-fg-color:        #356EAC;
+  --md-primary-fg-color--light: #5A8CC4;
+  --md-primary-fg-color--dark:  #2A5889;
+  --md-primary-bg-color:        #F1ECDC;
+  --md-primary-bg-color--light: rgba(241, 236, 220, 0.7);
+
+  --md-accent-fg-color:         #BA8048;
+  --md-accent-fg-color--transparent: rgba(186, 128, 72, 0.12);
+
+  --md-default-bg-color:        #F7F3E7;
+  --md-default-bg-color--light: #F1ECDC;
+  --md-default-fg-color:        #24303A;
+  --md-default-fg-color--light: #4A5A63;
+  --md-default-fg-color--lighter: #6B7A82;
+  --md-default-fg-color--lightest: #CFDCCB;
+
+  --md-typeset-a-color:         #356EAC;
+  --md-code-bg-color:           #ECE6D3;
+  --md-code-fg-color:           #2A3B45;
+  --md-footer-bg-color:         #2A5889;
+  --md-footer-bg-color--dark:   #244B40;
+
+  --aau-blue:   #356EAC;
+  --aau-ice:    #BAD8E6;
+  --aau-mint:   #CFDCCB;
+  --aau-copper: #BA8048;
+  --aau-ivory:  #F1ECDC;
+  --aau-ink:    #24303A;
+
+  --aau-note-bg:   #FAF6EA;
+  --aau-warn-bg:   #FBF3E6;
+  --aau-danger-bg: #FBF0EC;
+}
+
+[data-md-color-scheme="aau-dark"] {
+  color-scheme: dark;
+
+  --md-primary-fg-color:        #1E4260;
+  --md-primary-fg-color--light: #2C5878;
+  --md-primary-fg-color--dark:  #16324A;
+  --md-primary-bg-color:        #F1ECDC;
+  --md-primary-bg-color--light: rgba(241, 236, 220, 0.72);
+
+  --md-accent-fg-color:         #D9A56E;
+  --md-accent-fg-color--transparent: rgba(217, 165, 110, 0.14);
+
+  --md-default-bg-color:        #16222B;
+  --md-default-bg-color--light: #1B2A34;
+  --md-default-fg-color:        #E9E4D6;
+  --md-default-fg-color--light: #C9CFC9;
+  --md-default-fg-color--lighter: #9AA6A6;
+  --md-default-fg-color--lightest: #2E3F49;
+
+  --md-typeset-color:           #E9E4D6;
+  --md-typeset-a-color:         #A9CBE0;
+  --md-code-bg-color:           #22323E;
+  --md-code-fg-color:           #E9E4D6;
+  --md-footer-bg-color:         #101A21;
+  --md-footer-bg-color--dark:   #0C151A;
+
+  --aau-note-bg:   #1B2A34;
+  --aau-warn-bg:   #2A2419;
+  --aau-danger-bg: #2B1D1A;
+}
+
+/* 深色模式：正文、标题、表格、代码强制浅色，避免继承到浅色主题的深色文字 */
+[data-md-color-scheme="aau-dark"] .md-typeset {
+  color: #E9E4D6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset h1,
+[data-md-color-scheme="aau-dark"] .md-typeset h2,
+[data-md-color-scheme="aau-dark"] .md-typeset h3,
+[data-md-color-scheme="aau-dark"] .md-typeset h4,
+[data-md-color-scheme="aau-dark"] .md-typeset h5,
+[data-md-color-scheme="aau-dark"] .md-typeset h6 {
+  color: #F6F2E6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset p,
+[data-md-color-scheme="aau-dark"] .md-typeset li,
+[data-md-color-scheme="aau-dark"] .md-typeset dd,
+[data-md-color-scheme="aau-dark"] .md-typeset td {
+  color: #E9E4D6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset a {
+  color: #A9CBE0;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset a:hover {
+  color: #EFC08D;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset table:not([class]) {
+  background: #1B2A34;
+  border-color: #2E3F49;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset table:not([class]) th {
+  background: #22323E;
+  color: #F6F2E6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset table:not([class]) tr {
+  border-color: #2E3F49;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset table:not([class]) tr:hover {
+  background: rgba(186, 216, 230, 0.06);
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset code {
+  background: #22323E;
+  color: #E9E4D6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset pre > code {
+  background: #15222B;
+  color: #E9E4D6;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="aau-dark"] .aau-card {
+  background: #1B2A34;
+  border-color: #2E3F49;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .grid.cards > ul > li:hover {
+  border-color: #D9A56E;
+}
+
+/* 深色模式下 Hero 按钮文字 */
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-btn--solid {
+  background: #F1ECDC;
+  color: #1E4260;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-btn--solid:hover {
+  background: #FFFFFF;
+  color: #16324A;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-btn--ghost {
+  background: transparent;
+  color: #F1ECDC;
+  border-color: rgba(241, 236, 220, 0.55);
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-hero p,
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-hero h1,
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-hero .aau-tagline {
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .aau-hero p.aau-sub {
+  color: rgba(241, 236, 220, 0.75);
+}
+
+/* 深色模式：提示块标题用浅色，保证对比度 */
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.note > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.info > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.tip > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset details.note > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.info > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.tip > summary {
+  color: #D3E8F4;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.warning > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.caution > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.attention > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset details.warning > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.caution > summary {
+  color: #F2C08C;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.danger > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.failure > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset details.danger > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.failure > summary {
+  color: #F3B0A1;
+}
+
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.success > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset .admonition.example > .admonition-title,
+[data-md-color-scheme="aau-dark"] .md-typeset details.success > summary,
+[data-md-color-scheme="aau-dark"] .md-typeset details.example > summary {
+  color: #D6E3D3;
+}
+
+/* ── 全局排版 ── */
+.md-grid {
+  max-width: 74rem;
+}
+
+.md-typeset {
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 1.7em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* 卡片三列 */
+.md-typeset .grid.cards {
+  grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr));
+}
+
+.md-typeset .grid.cards > ul > li {
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color--light);
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(53, 110, 172, 0.10);
+}
+
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 0.5rem 0;
+  border-bottom-color: var(--md-default-fg-color--lightest);
+}
+
+/* ── 顶部导航 ── */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.md-tabs {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+/* ── 链接：蓝色文字，hover 铜色 ── */
+.md-typeset a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.md-typeset a:hover {
+  color: var(--md-accent-fg-color);
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+/* ── 首页 Hero ── */
+.aau-hero {
+  margin: -0.6rem -0.8rem 1.6rem;
+  padding: 2.6rem 1.6rem 2.2rem;
+  border-radius: 14px;
+  background:
+    radial-gradient(1200px 320px at 12% -10%, rgba(186, 216, 230, 0.55), transparent 60%),
+    linear-gradient(150deg, #2A5889 0%, #356EAC 55%, #4B82BC 100%);
+  color: #F1ECDC;
+}
+
+.aau-hero h1 {
+  color: #FFFFFF;
+  margin: 0 0 0.4rem;
+  font-size: 1.9rem;
+  line-height: 1.25;
+}
+
+.aau-hero p {
+  color: #DCE9F4;
+  margin: 0.2rem 0;
+  font-size: 0.82rem;
+}
+
+.aau-hero p.aau-sub {
+  color: rgba(241, 236, 220, 0.75);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 0.7rem;
+}
+
+.aau-hero .aau-tagline {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.18rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(241, 236, 220, 0.16);
+  border: 1px solid rgba(241, 236, 220, 0.35);
+  color: #F1ECDC;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+}
+
+.aau-hero .aau-actions {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.aau-hero .aau-btn {
+  display: inline-block;
+  padding: 0.5rem 1.05rem;
+  border-radius: 8px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: transform 0.15s, background 0.15s, color 0.15s;
+}
+
+.aau-hero .aau-btn--solid {
+  background: #F1ECDC;
+  color: #2A5889;
+}
+
+.aau-hero .aau-btn--solid:hover {
+  background: #FFFFFF;
+  color: #244B40;
+  transform: translateY(-1px);
+  border-bottom-color: transparent;
+}
+
+.aau-hero .aau-btn--ghost {
+  background: transparent;
+  color: #F1ECDC;
+  border-color: rgba(241, 236, 220, 0.55);
+}
+
+.aau-hero .aau-btn--ghost:hover {
+  background: rgba(241, 236, 220, 0.14);
+  color: #FFFFFF;
+  border-bottom-color: rgba(241, 236, 220, 0.55);
+}
+
+/* ── 卡片网格 ── */
+.aau-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.7rem;
+  margin: 1rem 0 1.6rem;
+}
+
+.aau-card {
+  display: block;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  background: var(--md-default-bg-color--light);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+
+.aau-card:hover {
+  border-color: var(--md-accent-fg-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(53, 110, 172, 0.12);
+}
+
+.aau-card .aau-card-title {
+  display: block;
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+  margin-bottom: 0.2rem;
+}
+
+.aau-card .aau-card-desc {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.5;
+}
+
+.aau-card .aau-card-index {
+  display: inline-block;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--md-accent-fg-color);
+  margin-bottom: 0.25rem;
+}
+
+/* ── 步骤条 ── */
+.aau-steps {
+  counter-reset: aau-step;
+  list-style: none;
+  padding-left: 0;
+  margin: 0.8rem 0 1.4rem;
+}
+
+.aau-steps > li {
+  counter-increment: aau-step;
+  position: relative;
+  padding: 0.15rem 0 0.9rem 2.1rem;
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  margin-left: 0.75rem;
+}
+
+.aau-steps > li:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.aau-steps > li::before {
+  content: counter(aau-step);
+  position: absolute;
+  left: -0.78rem;
+  top: 0;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color);
+  color: #F1ECDC;
+  font-size: 0.66rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── 提示块 ── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left: 4px solid var(--md-primary-fg-color);
+  background-color: var(--aau-note-bg);
+  box-shadow: none;
+  font-size: 0.72rem;
+}
+
+.md-typeset .admonition > .admonition-title,
+.md-typeset details > summary {
+  background-color: rgba(53, 110, 172, 0.12) !important;
+  color: var(--md-primary-fg-color--dark);
+  font-weight: 600;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.info,
+.md-typeset details.info,
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--md-primary-fg-color) !important;
+}
+
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset details.note > summary,
+.md-typeset .admonition.info > .admonition-title,
+.md-typeset details.info > summary,
+.md-typeset .admonition.tip > .admonition-title,
+.md-typeset details.tip > summary {
+  background-color: rgba(53, 110, 172, 0.12) !important;
+  color: var(--md-primary-fg-color--dark);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning,
+.md-typeset .admonition.caution,
+.md-typeset details.caution,
+.md-typeset .admonition.attention,
+.md-typeset details.attention {
+  border-color: var(--aau-copper) !important;
+  background-color: var(--aau-warn-bg);
+}
+
+.md-typeset .admonition.warning > .admonition-title,
+.md-typeset details.warning > summary,
+.md-typeset .admonition.caution > .admonition-title,
+.md-typeset details.caution > summary,
+.md-typeset .admonition.attention > .admonition-title,
+.md-typeset details.attention > summary {
+  background-color: rgba(186, 128, 72, 0.16) !important;
+  color: #8A5B2E;
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger,
+.md-typeset .admonition.failure,
+.md-typeset details.failure,
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+  border-color: #A75D4F !important;
+  background-color: var(--aau-danger-bg);
+}
+
+.md-typeset .admonition.danger > .admonition-title,
+.md-typeset details.danger > summary,
+.md-typeset .admonition.failure > .admonition-title,
+.md-typeset details.failure > summary,
+.md-typeset .admonition.bug > .admonition-title,
+.md-typeset details.bug > summary {
+  background-color: rgba(167, 93, 79, 0.16) !important;
+  color: #8A4A3E;
+}
+
+.md-typeset .admonition.success,
+.md-typeset details.success,
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: var(--aau-mint) !important;
+  background-color: var(--aau-note-bg);
+}
+
+.md-typeset .admonition.success > .admonition-title,
+.md-typeset details.success > summary,
+.md-typeset .admonition.example > .admonition-title,
+.md-typeset details.example > summary {
+  background-color: rgba(144, 166, 142, 0.18) !important;
+  color: #45603F;
+}
+
+/* 图标颜色跟随主题 */
+.md-typeset .admonition.note > .admonition-title::before,
+.md-typeset .admonition.note > .admonition-title::after,
+.md-typeset .admonition.info > .admonition-title::before,
+.md-typeset .admonition.info > .admonition-title::after,
+.md-typeset .admonition.tip > .admonition-title::before,
+.md-typeset .admonition.tip > .admonition-title::after {
+  background-color: var(--md-primary-fg-color) !important;
+  color: var(--md-primary-fg-color) !important;
+}
+
+.md-typeset .admonition.warning > .admonition-title::before,
+.md-typeset .admonition.warning > .admonition-title::after,
+.md-typeset .admonition.caution > .admonition-title::before,
+.md-typeset .admonition.caution > .admonition-title::after {
+  background-color: var(--aau-copper) !important;
+  color: var(--aau-copper) !important;
+}
+
+.md-typeset .admonition.danger > .admonition-title::before,
+.md-typeset .admonition.danger > .admonition-title::after {
+  background-color: #A75D4F !important;
+  color: #A75D4F !important;
+}
+
+/* 键盘按键 */
+.md-typeset .keys kbd {
+  background: var(--md-default-bg-color--light);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-bottom-width: 2px;
+  color: var(--md-default-fg-color);
+  box-shadow: none;
+}
+
+/* ── 表格 ── */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.72rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-default-bg-color--light);
+  color: var(--md-default-fg-color);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background: rgba(53, 110, 172, 0.05);
+}
+
+/* ── 代码 / 目录树 ── */
+.md-typeset pre > code {
+  border-radius: 8px;
+  font-size: 0.68rem;
+  line-height: 1.6;
+}
+
+/* ── 页脚 ── */
+.md-footer {
+  margin-top: 2rem;
+}
+
+.md-footer-meta {
+  background-color: var(--md-footer-bg-color--dark);
+}
+
+/* ── 深色模式微调 ── */
+[data-scheme="aau-dark"] .aau-card,
+[data-md-color-scheme="aau-dark"] .aau-card {
+  background: #1C2B35;
+}
+
+[data-md-color-scheme="aau-dark"] .aau-hero {
+  background:
+    radial-gradient(1200px 320px at 12% -10%, rgba(186, 216, 230, 0.18), transparent 60%),
+    linear-gradient(150deg, #1C3A52 0%, #25517A 55%, #2E6491 100%);
+}
+
+/* ── 移动端 ── */
+@media screen and (max-width: 76.1875em) {
+  .aau-hero {
+    padding: 1.8rem 1.1rem 1.6rem;
+    border-radius: 10px;
+  }
+  .aau-hero h1 {
+    font-size: 1.45rem;
+  }
+  .aau-grid {
+    grid-template-columns: 1fr;
+  }
+}

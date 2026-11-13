@@ -1,0 +1,112 @@
+﻿site_name: 安农课程资料库
+site_description: 安徽农业大学课程资料共享计划：课件、笔记、往年试卷与复习资料
+site_author: lastwejust
+site_url: https://lastwejust.github.io/Learning-in-AAU/
+repo_url: https://github.com/lastwejust/Learning-in-AAU
+repo_name: lastwejust/Learning-in-AAU
+edit_uri: edit/main/docs/
+copyright: 非官方项目 · 永久免费 · 仅供学习交流
+
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: aau
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色
+    - media: "(prefers-color-scheme: dark)"
+      scheme: aau-dark
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+# 课程索引页的下载链接由构建脚本在 mkdocs build 之后才复制进 site/files，
+# 因此这里关闭“链接目标不存在”的校验，避免误报。
+validation:
+  links:
+    not_found: ignore
+    absolute_links: ignore
+  nav:
+    omitted_files: ignore
+    not_found: ignore
+  anchors: warn
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lastwejust/Learning-in-AAU
+      name: GitHub 仓库
+    - icon: material/email-outline
+      link: mailto:zhang.x.w@ahau.edu.cn
+      name: 邮箱
+  generator: false
+
+nav:
+  - 首页: index.md
+  - 使用指南: 01-使用指南.md
+  - 分类与命名: 02-分类与命名.md
+  - 课程索引: 06-课程索引.md
+  - 参与共建: 03-参与共建.md
+  - 提醒与警告: 04-提醒与警告.md
+  - 常见问题: 05-常见问题.md

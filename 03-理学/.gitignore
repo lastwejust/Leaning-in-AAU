@@ -1,0 +1,4 @@
+﻿site/
+site-dark/
+__pycache__/
+*.pyc
